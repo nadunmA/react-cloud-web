@@ -5,6 +5,7 @@ import './App.css'
 import "tailwindcss";
 import NavBar from "./components/NavBar"
 import Hero from './components/Hero';
+import Analytics from './components/Analytics'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
         <NavBar />
         <Hero />
+        <Analytics /> 
         
       </div>
     </>

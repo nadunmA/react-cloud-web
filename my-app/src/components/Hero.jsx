@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+
 const Hero = () => {
     const [currentText, setCurrentText] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,7 +41,7 @@ const Hero = () => {
     return (
         <div className="text-white bg-black min-h-screen">
             <div className="max-w-[600px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-                <p className="text-green-400 font-bold p-2">FAST POWERFUL MORE RELIABLE</p>
+                <p className="text-green-400 font-bold p-1">FAST POWERFUL MORE RELIABLE</p>
                 <h1 className="md:text-5xl sm:text-5xl text-xl mb-2.5 font-bold md:py-6">This is next-gen protection</h1>
                 <div className="flex justify-center items-center flex-wrap gap-2">
                     <p className="md:text-3xl sm:text-3xl text-xl font-bold">Fast, flexible for</p>
@@ -49,8 +50,17 @@ const Hero = () => {
                         <span className="animate-pulse ml-1">|</span>
                     </span>
                 </div>
+
+                <p className="mt-4 font-bold text-gray-500">Keep your files, photos, and videos automatically backed up.</p>
+        
+               <div className="font-bold mt-4 flex items-center justify-center">
+                    <button>Explore</button>
+               </div>
+
             </div>
         </div>
+
+
     );
 };
 
