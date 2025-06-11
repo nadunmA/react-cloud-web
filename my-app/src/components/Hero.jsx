@@ -54,8 +54,8 @@ const Hero = () => {
 
                 <p className="mt-4 font-bold text-black">Keep your files, photos, and videos automatically backed up.</p>
         
-               <div className="font-bold mt-4 flex items-center justify-center">
-                    <button>Explore</button>
+               <div className="font-bold text-white mt-4 flex items-center justify-center">
+                    <button className="oneBtn">Explore</button>
                </div>
 
             </div>
