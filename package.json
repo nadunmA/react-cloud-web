@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@fontsource/open-sans": "^5.2.6",
     "react-icons": "^5.5.0",
     "react-typed": "^2.0.12"
   }

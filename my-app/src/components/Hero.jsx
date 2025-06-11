@@ -16,19 +16,19 @@ const Hero = () => {
             const currentString = strings[currentIndex];
             
             if (!isDeleting) {
-                // Typing
+               
                 if (currentText.length < currentString.length) {
                     setCurrentText(currentString.substring(0, currentText.length + 1));
                 } else {
-                    // Start deleting after delay
+                 
                     setTimeout(() => setIsDeleting(true), delayBetweenStrings);
                 }
             } else {
-                // Deleting
+                
                 if (currentText.length > 0) {
                     setCurrentText(currentString.substring(0, currentText.length - 1));
                 } else {
-                    // Move to next string
+                    
                     setIsDeleting(false);
                     setCurrentIndex((prev) => (prev + 1) % strings.length);
                 }
@@ -39,7 +39,8 @@ const Hero = () => {
     }, [currentText, currentIndex, isDeleting]);
 
     return (
-        <div className="text-white bg-black min-h-screen">
+
+        <div className="text-black bg-white min-h-screen">
             <div className="max-w-[600px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
                 <p className="text-green-400 font-bold p-1">FAST POWERFUL MORE RELIABLE</p>
                 <h1 className="md:text-5xl sm:text-5xl text-xl mb-2.5 font-bold md:py-6">This is next-gen protection</h1>
@@ -51,14 +52,17 @@ const Hero = () => {
                     </span>
                 </div>
 
-                <p className="mt-4 font-bold text-gray-500">Keep your files, photos, and videos automatically backed up.</p>
+                <p className="mt-4 font-bold text-black">Keep your files, photos, and videos automatically backed up.</p>
         
                <div className="font-bold mt-4 flex items-center justify-center">
                     <button>Explore</button>
                </div>
 
             </div>
+            
         </div>
+
+        
 
 
     );

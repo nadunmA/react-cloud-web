@@ -9,7 +9,10 @@ const NavBar = () => {
   };
 
   return (
-    <div className="text-white items-center h-24 max-w-[1455px] flex justify-between mx-auto px-4 bg-black">
+
+    <div className="text-black items-center h-24 max-w-[1455px] flex justify-between mx-auto px-4">
+
+      
   
       <h1 className="text-3xl font-bold">NYCFOX</h1>
 
@@ -30,7 +33,7 @@ const NavBar = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-500"
             : "fixed left-[-100%]"
         }
       >
@@ -49,3 +52,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+

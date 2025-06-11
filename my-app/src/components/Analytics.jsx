@@ -1,16 +1,20 @@
 import React from "react";
+import "@fontsource/open-sans"; // Defaults to weight 400
+
 
 const Analytics = () => {
 
     return (
 
-        <div className="w-full bg-white py-16 px-4">
+      <section className="back">
 
-            <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+        <h1 className="text-4xl font-bold mt-35 ml-23">NYCFOX Drive</h1>
+       <p className="ml-23 mt-2">Keep your files, photos, and videos automatically backed up<br />and available on all your devices.</p>
 
-            </div>
 
-        </div>
+
+     </section>
+        
 
     )
 
